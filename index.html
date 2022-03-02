@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phone Chaser</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- fontawesome -->
+    <script src="https://kit.fontawesome.com/9e33c082de.js" crossorigin="anonymous"></script>
+</head>
+<body class="bg-dark text-light">
+    <section class="container mt-5">
+        <!-- heading -->
+        <div class="mb-5">
+            <h1 class="text-center"><span class="text-info">Phone</span>  Chaser! <i class="fa fa-mobile fs-2 text-white-50" aria-hidden="true"></i></h1>
+        
+        </div>
+        <!-- searchfield -->
+        <div class="input-group mb-3 mx-auto w-50 mb-5 sticky-lg-top sticky-top">
+            <input id="search-field" type="text" class="form-control me-2" placeholder="Enter Phone Name You Want to See" aria-label="Recipient's username" aria-describedby="button-addon2">
+            <button onclick="searchMobile()" class="btn btn-outline-secondary" type="button" id="search-button"><i class="fa fa-search text-warning" aria-hidden="true"></i></button>
+          </div>
+
+          <!-- showing error -->
+          <div id="show" class="text-center text-info mt-5">
+        
+          </div>
+          <!-- show another error -->
+          <div id="showAno" class="text-center text-warning mt-5">
+            
+          </div>
+
+          <!-- single phone detail -->
+            <div id="phone-details" class="mx-auto text-light h-25 mb-5">
+
+            </div>
+            
+
+          
+        <!-- result field -->
+        <div id="search-result" class="row row-cols-1 row-cols-md-3 g-4 text-dark mx-auto w-75">
+    
+        </div>
+    </section>
+    <!-- bootstap js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <!-- main js -->
+    <script src="js/app.js"></script>
+</body>
+</html>
